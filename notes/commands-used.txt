@@ -1,0 +1,8 @@
+# Commands Used — Network Troubleshooting
+
+ipconfig
+ipconfig /all
+ping 8.8.8.8
+ping google.com
+tracert google.com
+ipconfig /flushdns
