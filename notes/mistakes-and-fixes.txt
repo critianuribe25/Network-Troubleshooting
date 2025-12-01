@@ -1,0 +1,7 @@
+# Mistakes and Fixes — Network Troubleshooting
+
+Issue: Ping command failed with "Ping request could not find host".
+Fix: Verified DNS server settings and corrected them to use valid DNS (e.g., 8.8.8.8 and 8.8.4.4).
+
+Issue: No internet connectivity at all.
+Fix: Checked default gateway and confirmed the device was properly connected to the router/network.
