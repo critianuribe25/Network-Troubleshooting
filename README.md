@@ -40,4 +40,19 @@ This project simulates troubleshooting a network connectivity issue using common
 ## 🧠 What I Learned
 - How to systematically troubleshoot network problems  
 - The difference between connectivity vs. DNS issues  
-- How DNS settings affect real-world connectivity  
+- How DNS settings affect real-world connectivity
+
+---
+
+## 🛠 Skills Demonstrated
+- Network diagnostics
+- DNS troubleshooting
+- Ping, tracert, ipconfig
+- Connectivity analysis
+- Local vs external testing
+
+---
+
+**Status:** In Progress  
+**Expected Completion:** December 23, 2025
+
