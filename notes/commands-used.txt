@@ -1,8 +1,56 @@
-# Commands Used — Network Troubleshooting
+# 🧾 Commands Used
 
-ipconfig
-ipconfig /all
-ping 8.8.8.8
-ping google.com
-tracert google.com
-ipconfig /flushdns
+Below is a breakdown of each network troubleshooting command used in this project, including its purpose and what the output reveals.
+
+---
+
+## 1. `ipconfig`
+**Purpose:**  
+Displays the computer’s IP address, subnet mask, default gateway, and DNS configuration.
+
+**What I learned:**  
+- Shows local network settings  
+- Confirms whether the device has a valid IP address  
+- Helps identify gateway for connectivity tests  
+
+---
+
+## 2. `ping google.com`
+**Purpose:**  
+Tests if the computer can reach an external host and measures latency.
+
+**What I learned:**  
+- Successful replies mean the device has internet access  
+- Round trip times indicate connection quality  
+- Packet loss would suggest a network problem  
+
+---
+
+## 3. `tracert google.com`
+**Purpose:**  
+Shows the route packets take from the local computer to a destination server.
+
+**What I learned:**  
+- Identifies which hop (router/server) may be causing delays  
+- Reveals how many networks the request passes through  
+- Timeouts are normal on secured hops  
+
+---
+
+## 4. `nslookup google.com`
+**Purpose:**  
+Queries the DNS server to resolve a domain name into an IP address.
+
+**What I learned:**  
+- Confirms DNS is working  
+- Shows the DNS server being used  
+- Provides IPv4 and IPv6 addresses for the domain  
+
+---
+
+# 🧠 Overall Key Knowledge Gained
+- How DNS resolution works  
+- How routing paths differ across networks  
+- How to interpret latency  
+- How to confirm correct IP/gateway/DNS configuration  
+- How to systematically troubleshoot connectivity  
