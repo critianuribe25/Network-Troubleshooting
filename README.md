@@ -1,58 +1,89 @@
-# Network Troubleshooting Lab
+# 🌐 Network Troubleshooting Lab
 
-## 🔍 Overview
-This project simulates troubleshooting a network connectivity issue using common Windows command-line tools.
-
----
-
-## 🎯 What This Project Shows
-- Checking local IP configuration  
-- Testing connectivity to external IPs  
-- Diagnosing DNS issues  
-- Tracing the route to an external host  
+## 📌 Overview
+This project demonstrates hands-on network diagnostics using Windows Command Prompt tools.  
+The goal is to show the ability to identify connectivity issues, analyze DNS behavior, test routing paths, and verify local IP configuration.
 
 ---
 
-## 🧱 Prerequisites
-- Windows machine with Command Prompt  
-- Active internet connection  
+## 🛠️ Commands Demonstrated
+
+### ✔️ 1. `ipconfig` — Check Local IP Configuration
+Used to retrieve IP address, subnet mask, and default gateway.
+
+📸 **Screenshot:**  
+![ipconfig](./screenshots/ipconfig_output.png)
 
 ---
 
-## 🪜 Steps Performed
-1. Ran `ipconfig` to review IP address, gateway, and DNS servers.  
-2. Tested connectivity using `ping 8.8.8.8`.  
-3. Tested DNS resolution with `ping google.com`.  
-4. Used `tracert google.com` to view the route.  
-5. Flushed the DNS cache with `ipconfig /flushdns`.  
-6. Updated DNS server settings if needed.  
+### ✔️ 2. `ping google.com` — Test Connectivity
+Used to verify connectivity to an external host and measure latency.
+
+📸 **Screenshot:**  
+![ping](./screenshots/ping_google.png)
+
+**What we learn from this:**  
+- Host is reachable  
+- Response times are healthy  
+- No packet loss  
 
 ---
 
-## 🖼️ Screenshots (to be added)
-- `ipconfig` output  
-- `ping` results  
-- `tracert` output  
-- DNS settings page  
+### ✔️ 3. `tracert google.com` — Trace Network Route
+Shows each hop between the local computer and Google's servers.
+
+📸 **Screenshot:**  
+![tracert](./screenshots/tracert_google.png)
+
+**What we learn from this:**  
+- Local router at 192.168.1.1  
+- ISP routing hops  
+- One hop times out (normal on some networks)  
+- Path successfully reaches Google  
 
 ---
 
-## 🧠 What I Learned
-- How to systematically troubleshoot network problems  
-- The difference between connectivity vs. DNS issues  
-- How DNS settings affect real-world connectivity
+### ✔️ 4. `nslookup google.com` — DNS Lookup
+Used to identify DNS servers and resolve domain names to IP addresses.
+
+📸 **Screenshot:**  
+![nslookup](./screenshots/nslookup_google.png)
+
+**What we learn from this:**  
+- Shows local DNS resolver  
+- Resolves Google’s IPv4 and IPv6 addresses  
+- Confirms DNS is functioning correctly  
 
 ---
 
-## 🛠 Skills Demonstrated
-- Network diagnostics
-- DNS troubleshooting
-- Ping, tracert, ipconfig
-- Connectivity analysis
-- Local vs external testing
+## 📝 Troubleshooting Summary
+
+| Command | Purpose | Result |
+|---------|----------|---------|
+| `ipconfig` | Check local network configuration | Valid IP & gateway |
+| `ping` | Test connectivity & latency | Successful replies |
+| `tracert` | Trace route across network | Reaches Google |
+| `nslookup` | Test DNS resolution | DNS resolving normally |
 
 ---
 
-**Status:** In Progress  
-**Expected Completion:** December 23, 2025
+## 🧠 Lessons Learned
+- How DNS resolution works  
+- How routing paths differ across networks  
+- How to test latency and connectivity  
+- How local IP configuration affects network access  
+- Why traceroute may show “timeouts” on protected hops  
 
+---
+
+## 📚 Tools Used
+- Windows Command Prompt  
+- ISP DNS Resolver  
+- Local Router  
+
+---
+
+## ✅ Status
+✔️ Completed  
+✔️ Screenshots included  
+✔️ Recruiter-ready  
